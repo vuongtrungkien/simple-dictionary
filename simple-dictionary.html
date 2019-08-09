@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple dictionary</title>
+</head>
+<body>
+    <script>
+        let word = prompt("Enter the word");
+        let eng = ["book", "pen", "water","wind","fire"];
+        let vni = ["Sách","bút","nước","gió","lửa"];
+
+
+         function checkPosition() {
+             for (let i = 0;i < eng.length ; i++) {
+                 if (word === eng[i]) {
+                     alert(vni[i]);
+                     break;
+                 }
+             }
+
+         }
+         checkPosition();
+    </script>
+</body>
+</html>
